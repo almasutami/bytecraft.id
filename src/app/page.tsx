@@ -98,12 +98,12 @@ export default function Home() {
           y: digitalizingInView ? 0 : 50,
         }}
         transition={{ duration: 0.8 }}
-        className="bg-gradient-to-b from-primary to-secondary flex flex-col justify-center h-screen relative overflow-hidden"
+        className="bg-primary flex flex-col justify-center h-screen relative overflow-hidden"
       >
-        <div className="max-w-[80%] mx-auto flex flex-col gap-5 justify-center text-white text-left px-5">
+        <div className="max-w-[80%] mx-auto flex text-4xl mb-20 flex-col gap-5 justify-center text-white text-left px-5">
           Byte by Byte, We Build Your Digital Future
         </div>
-        <div className="flex flex-row gap-12 mt-6 max-w-[80%] justify-center mx-auto">
+        <div className="flex flex-row gap-12 mt-6 max-w-[80%] justify-center text-white mx-auto">
           <div>
             <Image
               src={digital2}
@@ -126,7 +126,7 @@ export default function Home() {
       </motion.div>
 
       {/* Keunggulan Platform Section */}
-      <div className="bg-gradient-to-b to-primary from-secondary text-white flex flex-col justify-center h-screen relative overflow-hidden">
+      <div className="bg-secondary text-gray-800 flex flex-col justify-center h-screen relative overflow-hidden">
         <motion.div
           ref={advantagesRef}
           initial={{ opacity: 0, y: 50 }}
